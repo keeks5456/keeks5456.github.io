@@ -1,27 +1,27 @@
-
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './components/Navbar';
-import Home from './components/Home'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
-import Resume from './components/Resume'
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import Blogs from "./components/Blogs"
 
 function App() {
   return (
-    <Router>
     <div>
-      {/* <Navbar />
-      <Switch>
-        <Route exact="/home" component={Home} />
-        <Route exact="/contacts" component={Contact} />
-      <Route exact="/projects" component={Projects} />
-      <Projects />
-      </Switch> */}
-      <Resume />
+      <Router>
+        <Navbar />
+        {/* <Switch>
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/project" component={Projects} />
+          <Route exact path="/resume" component={Resume} />
+        </Switch> */}
+        <Blogs />
+      </Router>
     </div>
-    </Router>
   );
 }
 

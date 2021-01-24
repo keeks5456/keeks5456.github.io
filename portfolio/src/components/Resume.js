@@ -8,7 +8,7 @@ function Resume() {
     return (
         <div>
         <div className="res">
-
+            <h1>hello from resume</h1>
             <h2 className="heading">Resume</h2>
 
             {/* <a href="Resume.pdf" rel="none" target="_blank"></a> */} 
@@ -16,7 +16,7 @@ function Resume() {
             {/* if my resume had linked embedded in them I would us this so that they are functional  */}
             <Document file={resume}
             onLoadError={console.error}
-            style={{width: '100vw', height: 'auto'}}>
+            style={{width: '50vw', height: 'auto'}}>
                 <Page pageIndex={0}/>
             </Document>
         </div>
