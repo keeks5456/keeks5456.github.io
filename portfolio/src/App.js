@@ -11,17 +11,17 @@ import Blogs from "./components/Blogs"
 
 function App() {
 
-  const [profile, setProfile] = useState({
-    name: "Akiko Green",
-    profilePic: "",
-    ProfileUrl: ""
-})
+//   const [profile, setProfile] = useState({
+//     name: "Akiko Green",
+//     profilePic: "",
+//     ProfileUrl: ""
+// })
 
-const [blogs, setBlogs] = useState({
-    item: [],
-    isLoading: true,
-    error: null
-})
+// const [blogs, setBlogs] = useState({
+//     item: [],
+//     isLoading: true,
+//     error: null
+// })
 
 
   return (
@@ -34,7 +34,9 @@ const [blogs, setBlogs] = useState({
           <Route exact path="/project" component={Projects} />
           <Route exact path="/resume" component={Resume} />
         </Switch> */}
-        <Blogs blogs={blogs} setBlogs={setBlogs} profile={profile} setProfile={setProfile} />
+        <Blogs 
+        // blogs={blogs} setBlogs={setBlogs} profile={profile} setProfile={setProfile} 
+        />
       </Router>
     </div>
   );
