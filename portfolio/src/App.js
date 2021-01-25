@@ -1,4 +1,5 @@
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {useState} from 'react'
 import './App.css';
 
 import Navbar from './components/Navbar';
@@ -9,6 +10,20 @@ import Resume from './components/Resume';
 import Blogs from "./components/Blogs"
 
 function App() {
+
+  const [profile, setProfile] = useState({
+    name: "Akiko Green",
+    profilePic: "",
+    ProfileUrl: ""
+})
+
+const [blogs, setBlogs] = useState({
+    item: [],
+    isLoading: true,
+    error: null
+})
+
+
   return (
     <div>
       <Router>
@@ -19,7 +34,7 @@ function App() {
           <Route exact path="/project" component={Projects} />
           <Route exact path="/resume" component={Resume} />
         </Switch> */}
-        <Blogs />
+        <Blogs blogs={blogs} setBlogs={setBlogs} profile={profile} setProfile={setProfile} />
       </Router>
     </div>
   );
