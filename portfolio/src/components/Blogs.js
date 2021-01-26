@@ -51,10 +51,11 @@ function Blogs() {
         if (blogs.item) {
             console.log(blogs.item)
             return blogs.item.map((post, index) => (
-                <div className='container' key={index}>
-                <div className='card-image' style={{backgroundImage: `url(${post.thumbnail})`}}>
+                <div className='whole-card' key={index}>
+                <div className='card-image'>
+                <img src={post.thumbnail} className="blog__topImg"></img>
                     <div className='authorImg'>
-                        <a href={profile.profileUrl} rel='noopener noreferrer' target='_blank' style={{backgroundImage: `url(${profile.profileImage})`}}></a>
+                        <a href={profile.profileUrl} rel='noopener noreferrer' target='_blank'></a>
                     </div>
                 </div>
                 <div className='card-body'>
