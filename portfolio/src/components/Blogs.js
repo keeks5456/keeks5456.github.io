@@ -2,21 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import toText from "../Utilities/toText"
 
-function Blogs() {
+function Blogs({blogs, setBlogs, profile, setProfile} ) {
 
-    // {blogs, setBlogs, profile, setProfile} 
-
-    const [profile, setProfile] = useState({
-        name: "Akiko Green",
-        profilePic: "",
-        ProfileUrl: ""
-    })
-
-    const [blogs, setBlogs] = useState({
-        item: [],
-        isLoading: true,
-        error: null
-    })
 
     const mediumURL =
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@agreen17";

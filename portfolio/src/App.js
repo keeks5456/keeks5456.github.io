@@ -11,17 +11,17 @@ import Blogs from "./components/Blogs";
 
 function App() {
 
-//   const [profile, setProfile] = useState({
-//     name: "Akiko Green",
-//     profilePic: "",
-//     ProfileUrl: ""
-// })
+  const [profile, setProfile] = useState({
+    name: "Akiko Green",
+    profilePic: "",
+    ProfileUrl: ""
+})
 
-// const [blogs, setBlogs] = useState({
-//     item: [],
-//     isLoading: true,
-//     error: null
-// })
+const [blogs, setBlogs] = useState({
+    item: [],
+    isLoading: true,
+    error: null
+})
 
 
   return (
@@ -33,10 +33,11 @@ function App() {
           <Route exact path="/home" component={Home} />
           <Route exact path="/project" component={Projects} />
           <Route exact path="/resume" component={Resume} />
-        </Switch> */}
         <Blogs 
-          // blogs={blogs} setBlogs={setBlogs} profile={profile} setProfile={setProfile} 
+          blogs={blogs} setBlogs={setBlogs} 
+          profile={profile} setProfile={setProfile} 
           /> 
+        </Switch> */}
           <Projects />
       </Router>
     </div>
