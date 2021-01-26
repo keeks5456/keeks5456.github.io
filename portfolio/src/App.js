@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
-import Blogs from "./components/Blogs"
+import Blogs from "./components/Blogs";
 
 function App() {
 
@@ -35,8 +35,9 @@ function App() {
           <Route exact path="/resume" component={Resume} />
         </Switch> */}
         <Blogs 
-        // blogs={blogs} setBlogs={setBlogs} profile={profile} setProfile={setProfile} 
-        />
+          // blogs={blogs} setBlogs={setBlogs} profile={profile} setProfile={setProfile} 
+          /> 
+          <Projects />
       </Router>
     </div>
   );
