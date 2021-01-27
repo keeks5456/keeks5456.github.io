@@ -1,3 +1,10 @@
 .res {
     border: 3px solid black;
 }
+
+.card {
+    display: inline-flex;
+    align-self: auto;
+    border: black solid 5px;
+    padding: 20px;
+}
