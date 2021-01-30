@@ -1,5 +1,25 @@
 .res {
+    display: inline-flex;
     border: 3px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+ .react-pdf__Document {
+    border: 3px solid goldenrod;
+
+}
+
+.connections ul{
+    display: flex;
+    border: solid 1px gold;
+    justify-content: space-evenly;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
 }
 
 body{

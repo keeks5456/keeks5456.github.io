@@ -32,13 +32,13 @@ const [blogs, setBlogs] = useState({
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/project" component={Projects} />
-          <Route exact path="/resume" component={Resume} />
-        <Blogs 
+          <Blogs 
           blogs={blogs} setBlogs={setBlogs} 
           profile={profile} setProfile={setProfile} 
           /> 
-        </Switch> */}
           <Projects />
+        </Switch> */}
+        <Route exact path="/resume" component={Resume} />
       </Router>
     </div>
   );
