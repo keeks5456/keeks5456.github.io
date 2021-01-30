@@ -9,7 +9,7 @@ function Projects() {
 	console.log(doggyDates);
 	return (
 		<div>
-			<h1>My Personal & Group Projects</h1>
+			<h1 className='project-title'>My Personal & Group Projects</h1>
 			<div className="projects-container">
 
 				{/* Voluntheroes*/}
