@@ -2,6 +2,10 @@
     border: 3px solid black;
 }
 
+body{
+  background: linear-gradient(-45deg, #2b2f77, #6b4984);
+}
+
 .projects-container {
     /* display: flex;
     flex-direction: row;
@@ -20,17 +24,17 @@
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    border: 5px solid rgba(39, 249, 198, 0.3);
+    /* border: 5px solid #2b2f77; */
     cursor: pointer;
     text-align: center;
    
     border-radius: 15px;
     background: #eeeeee;
     padding: 2rem;
+    
 
-    color: #1a436b;
-    
-    
+    font-family: 'Imbue', serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .card-img-top {
