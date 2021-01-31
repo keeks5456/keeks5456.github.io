@@ -6,7 +6,6 @@ import { Card } from 'react-bootstrap';
 
 
 function Projects() {
-	console.log(doggyDates);
 	return (
 		<div>
 			<h1 className='project-title'>My Personal & Group Projects</h1>
