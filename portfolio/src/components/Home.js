@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 // try to implement hooks here
-function Home() {
+function Home({ profile }) {
 
     return (
         <div>
@@ -11,7 +11,7 @@ function Home() {
                     {/* banner image goes here BLM or something */}
                 </div>
                 <div className="profile-pic">
-                    <img src="a source" alt="picture of me" />
+                    <img src={profile.profilePic} alt="Akiko Green" />
                 </div>
                 <div className="introduction">
                     <h1>My Name is Akiko Green! </h1>
