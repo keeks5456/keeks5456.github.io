@@ -57,16 +57,14 @@ console.log(blogs)
         <Navbar />
         <Switch>
           <Route exact path="/contact" component={Contact} />
-          <Route path="/home">
-            <Home profile={profile}/>
-          </Route> 
+          <Route exact path="/home">
+            <Home profile={profile} />
+          </Route>
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/resume" component={Resume} />
         <Route path="/blogs">
-          <Blogs blogs={blogs} profile={profile}/> 
-          </Route>
-          <Route path="/projects" >
-           <Projects />
-          </Route>
+       <Blogs blogs={blogs} profile={profile} />
+          </Route>   
         </Switch>
       </Router>
     </div>
