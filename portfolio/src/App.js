@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Blogs from "./components/Blogs";
+import QuotesGenerator from './components/QuotesGenerator'
 
 function App() {
 
@@ -30,7 +31,7 @@ useEffect(() => {
 fetch(mediumURL)
     .then(res => res.json())
     .then(info => {
-        console.log(info)
+        // console.log(info)
         // profile info
         const avatar = info.feed.image
         // const link = info.feed.link
@@ -49,8 +50,8 @@ fetch(mediumURL)
 }, [])// end of useEffect
 
 
-console.log(profile)
-console.log(blogs)
+// console.log(profile)
+// console.log(blogs)
   return (
     <div>
       <Router>
@@ -64,7 +65,8 @@ console.log(blogs)
           <Route exact path="/resume" component={Resume} />
         <Route path="/blogs">
        <Blogs blogs={blogs} profile={profile} />
-          </Route>   
+          </Route> 
+          <Route exact path="/" component={QuotesGenerator}/>  
         </Switch>
       </Router>
     </div>

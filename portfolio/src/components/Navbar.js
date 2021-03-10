@@ -10,6 +10,7 @@ class Navbar extends Component {
             <div>
                 <div className="navbar">
                     <ul className="navlist">
+                        <li><Link to="/">Quotes Generator</Link></li>
                         <li><Link to="/home">Home</Link></li>
                         {/* <FontAwesomeIcon icon={faHome} size="2x" /> */}
                         <i className="fas fa-home"></i>
