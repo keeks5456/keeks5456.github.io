@@ -18,8 +18,9 @@ function Home({ profile }) {
                     <h2 className="about-me">About Me!</h2>
                     <p>Before I became a Junior Software Engineer, I was what you could call a quadruple threat! I was a dancer for a team called Str8Jacket,  a Barista for a variety of coffee shops, a student at San Francisco State University and, lastly an amazing dog walker for Wags! The best thing about this life was that I was creating connections with people almost everyday! Dancing brought out my passion for expressing myself. Making coffee, gave me the ability to turn people's bad days into good ones. Going to school has molded me into a hard working and well-organized person. Honestly, walking dogs is my form of therapy! Unfortunately, it all was not enough for me. Internally, I wanted so much more for myself but in a different way. </p>
 
-                    <h2 className="SWE">Why Coding?</h2>
-                    <p></p>
+                    <h2 className="about-me">How I Got Into Coding!</h2>
+                    <h4><b>New Years 2019...</b></h4>
+                    <p>It was a few weeks working at 24 Hour Fitness. I had grown to dislike the job because of how </p>
                 </div> 
                 <div className="social-handles">
                     <ul>

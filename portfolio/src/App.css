@@ -147,6 +147,23 @@ li a.active {
     box-shadow: 0 4px 7px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
 }
+
+/* quotes generator css here */
+
+#quotes-box{
+    display: inline-block;
+    background-color: whitesmoke;
+    border-radius: 10px 0 10px 0;
+    margin: 30px 0 0 30px;
+    padding: 25px;
+}
+
+#author{
+    padding-top: 5px;
+    float: right;
+}
+
+
 /* @media query here */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 }

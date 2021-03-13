@@ -1,1 +1,0 @@
-// here will be the first page where the user can click through different anime quotes

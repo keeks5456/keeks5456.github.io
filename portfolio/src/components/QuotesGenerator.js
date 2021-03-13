@@ -36,7 +36,7 @@ function QuotesGenerator() {
     //generate random quote
 
     return (
-        <div id="qutes-box">
+        <div id="quotes-box">
             <div id="text">{quote}</div>
             <div id="author">{author}</div>
             <button onClick={handleClick} id="new-quote">New quote</button>
