@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-
+import cookieRecipie from '../projectImage/cookieRecipie.png'
 // try to implement hooks here
 function Home({ profile }) {
 
@@ -20,7 +20,11 @@ function Home({ profile }) {
 
                     <h2 className="about-me">How I Got Into Coding!</h2>
                     <h4><b>New Years 2019...</b></h4>
-                    <p>It was a few weeks working at 24 Hour Fitness. I had grown to dislike the job because of how </p>
+                    <p>It was a few days befre New Years eve, I was working at 24 Hour Fitness. I had grown to dislike the job because of how understimulating it had become! I felt stuck and unhappy. The day before New Years I looking in the mirror and I told myself, "You cant keep working in a comfortable job! You need to take a risk, do better for yourself!"</p>
+                    <img className="do-better-gif" src="https://media3.giphy.com/media/26gsetuXxUjaWPLA4/giphy.gif" width="200px" height="auto"/>
+                    <p>That's where coding comes into the picture! On January 5th, 2020, I woke up at 6 or 7am, grabbed my beat up old laptop, and googled, "How to code for beginners". The first thing I learned was HTML and CSS on a free environment called "CodePen"! Learning the fundamentals of HTML, CSS and soon after getting my hands dirty with Javascript, I felt I was ready to take the risk of attending a bootcamp to further my learnings.</p>
+                    <img src={cookieRecipie} width="350em" height="auto" />
+                    <p>After 4 months at Flatiron School, I obtained the tools I needed to craft myself into the developer I am today! Although, I am way far off to being the developer I want to be, I am grateful for taking the first step in changing my left for a better one and learning how to code! </p>
                 </div> 
                 <div className="social-handles">
                     <ul>

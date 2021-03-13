@@ -1,4 +1,4 @@
-import doggyDates from '../projectImage/doggyDates.png';
+ import doggyDates from '../projectImage/doggyDates.png';
 import qpq from '../projectImage/QPQ.gif';
 import Voluntheroes from '../projectImage/Voluntheroes.png';
 import justBreathe from '../projectImage/JustBreathe.png'

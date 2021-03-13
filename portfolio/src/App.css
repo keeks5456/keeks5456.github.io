@@ -23,7 +23,7 @@
 }
 
 body{
-  background: linear-gradient(-35deg, #2b2f77, #6b4984);
+  background: linear-gradient(-35deg, lightblue, pink);
 }
 /* projects css here */
 .projects-container {
@@ -161,6 +161,10 @@ li a.active {
 #author{
     padding-top: 5px;
     float: right;
+}
+
+img, .do-better-gif{
+    border-radius: 10px;
 }
 
 
