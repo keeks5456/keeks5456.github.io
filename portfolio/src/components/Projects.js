@@ -3,11 +3,18 @@ import qpq from '../projectImage/QPQ.gif';
 import Voluntheroes from '../projectImage/Voluntheroes.png';
 import justBreathe from '../projectImage/JustBreathe.png'
 import { Card } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+import {pageTransitions} from '../containers/pageTransition'
 
 
 function Projects() {
 	return (
 		<div>
+			<motion.div
+             initial="out"
+             animate="in"
+             exit="out"
+             variants={pageTransitions}>
 			<h1 className='project-title'>My Personal & Group Projects</h1>
 			<div className="projects-container">
 
@@ -102,6 +109,7 @@ function Projects() {
 				{/* Just Breath */}
 				
 			</div>
+			</motion.div>
 		</div>
 	);
 }

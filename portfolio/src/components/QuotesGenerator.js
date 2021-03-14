@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import {pageTransitions} from '../containers/pageTransition'
+import { motion } from 'framer-motion';
 
 function QuotesGenerator() {
 
@@ -36,11 +38,21 @@ function QuotesGenerator() {
     //generate random quote
 
     return (
+        <motion.div
+             initial="out"
+             animate="in"
+             exit="out"
+             variants={pageTransitions}>
         <div id="quotes-box">
             <div id="text">{quote}</div>
             <div id="author">{author}</div>
             <button onClick={handleClick} id="new-quote">New quote</button>
         </div>
+        <button className="meme-button">
+            Click Me For Memes :)
+        </button>
+        {/* meme generator here */}
+        </motion.div>
     );
 }
 

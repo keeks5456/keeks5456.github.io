@@ -1,11 +1,20 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { Route } from 'react-router-dom';
 import cookieRecipie from '../projectImage/cookieRecipie.png'
+import {pageTransitions} from '../containers/pageTransition'
+
+
 // try to implement hooks here
 function Home({ profile }) {
 
     return (
         <div>
+            <motion.div
+             initial="out"
+             animate="in"
+             exit="out"
+             variants={pageTransitions}>
             <div className="home-container">
                 <div className="banner">
                     {/* banner image goes here BLM or something */}
@@ -14,7 +23,15 @@ function Home({ profile }) {
                     <img src={profile.profilePic} alt="Akiko Green" />
                 </div>
                 <div className="introduction">
+                    <motion.h1 
+                    initial={{y: -550 }}
+                    animate={{
+                        fontSize: 100,
+                        y: -10
+                     }}
+                    >
                     <h1>My Name is Akiko Green!</h1>
+                    </motion.h1>
                     <h2 className="about-me">About Me!</h2>
                     <p>Before I became a Junior Software Engineer, I was what you could call a quadruple threat! I was a dancer for a team called Str8Jacket,  a Barista for a variety of coffee shops, a student at San Francisco State University and, lastly an amazing dog walker for Wags! The best thing about this life was that I was creating connections with people almost everyday! Dancing brought out my passion for expressing myself. Making coffee, gave me the ability to turn people's bad days into good ones. Going to school has molded me into a hard working and well-organized person. Honestly, walking dogs is my form of therapy! Unfortunately, it all was not enough for me. Internally, I wanted so much more for myself but in a different way. </p>
 
@@ -37,6 +54,7 @@ function Home({ profile }) {
                 </div>
             </div> 
             {/* home container div */}
+            </motion.div>
         </div>//end all divs
     );
 }

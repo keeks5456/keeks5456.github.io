@@ -1,6 +1,8 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import toText from "../Utilities/toText"
+import {pageTransitions} from '../containers/pageTransition'
+import { motion } from 'framer-motion';
 
 function Blogs({ blogs, profile }) {
 
@@ -34,10 +36,16 @@ function Blogs({ blogs, profile }) {
 
     return (
         <div>
+            <motion.div
+             initial="out"
+             animate="in"
+             exit="out"
+             variants={pageTransitions}>
             <div className="blog-container">
                 <div className="blogs-container"></div>
                 {blogs.isLoading ? 'Loading...' : allBlogs()}
             </div>
+            </motion.div>
         </div>
     );
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import resume from '../Utilities/Resume.pdf' //fix this later
-
+import {pageTransitions} from '../containers/pageTransition'
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faMedium,
@@ -18,6 +19,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 function Resume() {
     return (
         <div>
+            <motion.div
+             initial="out"
+             animate="in"
+             exit="out"
+             variants={pageTransitions}>
             <h2 className="heading">Resume</h2>
             <div className="res">
                 <br />
@@ -41,6 +47,7 @@ function Resume() {
                     <li> <a href={'mailto:akikogreen08@gmail.com'} className='email'>Contact Me Here <FontAwesomeIcon icon={faTelegramPlane}/></a></li>
                 </ul>
             </div>
+            </motion.div>
         </div>
     );
 }
