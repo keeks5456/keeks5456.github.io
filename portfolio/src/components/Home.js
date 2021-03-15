@@ -11,7 +11,7 @@ import {
     faLinkedin,
     faTelegramPlane
   } from "@fortawesome/free-brands-svg-icons";
-
+// import {coolCry} from '../projectImage/coolCry.png'
 
 // try to implement hooks here
 function Home({ profile }) {
@@ -39,7 +39,8 @@ function Home({ profile }) {
                         y: -10
                      }}
                     >
-                    <h1>Hey There! I'm Akiko </h1>
+                    <h1>Hey There! I'm Akiko!  </h1>
+                    {/* add cool cry */}
                     </motion.h1>
                     <h2 className="about-me">About Me!</h2>
                     <p>Before I became a Junior Software Engineer, I was what you could call a quadruple threat! I was a dancer for a team called Str8Jacket,  a Barista for a variety of coffee shops, a student at San Francisco State University and, lastly an amazing dog walker for Wags! The best thing about this life was that I was creating connections with people almost everyday! Dancing brought out my passion for expressing myself. Making coffee, gave me the ability to turn people's bad days into good ones. Going to school has molded me into a hard working and well-organized person. Honestly, walking dogs is my form of therapy! Unfortunately, it all was not enough for me. Internally, I wanted so much more for myself but in a different way. </p>
