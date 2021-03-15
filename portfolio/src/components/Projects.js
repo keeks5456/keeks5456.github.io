@@ -17,7 +17,6 @@ function Projects() {
              variants={pageTransitions}>
 			<h1 className='project-title'>My Personal & Group Projects</h1>
 			<div className="projects-container">
-
 				{/* Voluntheroes*/}
 				<Card style={{ }}>
 					<Card.Img variant="top" src={Voluntheroes} alt="qpq-gif" style={{  }} />

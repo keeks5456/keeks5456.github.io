@@ -1,25 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+/* resume css */
 .res {
     display: inline-flex;
-    border: 3px solid black;
+    border: 3px solid lightblue;
     padding: 20px;
     margin: 20px;
 }
 
  .react-pdf__Document {
-    border: 3px solid black;
+    /* border: 3px solid black; */
 
+}
+
+.resume-container{
+    display: flex;
+    justify-content: center;
 }
 
 .connections ul{
     display: flex;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     justify-content: space-evenly;
-
+    font-size: 25px;
 }
 
 .heading {
     display: flex;
     justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    letter-spacing: 10px;
+    font-weight: 700;
+    
 }
 
 body{
@@ -27,8 +40,8 @@ body{
 }
 /* projects css here */
 .projects-container {
-    /* display: flex;
-    flex-direction: row;
+     display: flex;
+    /* flex-direction: row;
     justify-content: space-around; */
 }
 
@@ -40,6 +53,7 @@ body{
 }
 
 .card {
+    width: 25%;
     display: inline-flexbox;
     /* display: flex; */
     /* flex-wrap: wrap; */
@@ -72,6 +86,34 @@ change this later
 
 */
 
+/* home component */
+
+.social-handles{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    /* float: right; maybe use this */
+}
+
+img, .akiko-image{
+    border-radius: 40px;
+    width: 10em;
+    margin-top: 10px;
+
+}
+
+.introduction{
+background-color: whitesmoke;
+border: 1px solid black;
+display: flex;
+}
+
+/*  */
 .card-img-top {
     width: 100%;
     /* height: auto;
@@ -127,7 +169,7 @@ li a.active {
     border-radius: 15px;
     background: #eeeeee;
     padding: 2rem;
-    width: 20%;
+    width: 25%;
     height: max-content;
     display: inline-grid;
     margin: 1rem 2rem;
@@ -135,18 +177,9 @@ li a.active {
 }
 
 .blog__topImg{
-    width: 150%;
+    width: 100%;
 }
 
-.blog-image{
-    padding-top: 22px;
-    padding-left: 1vw;
-    width: 25%;
-    border-radius: 20%;
-    /* float: right; */
-    box-shadow: 0 4px 7px 0 rgb(0 0 0 / 20%);
-    transition: 0.3s;
-}
 
 /* quotes generator css here */
 

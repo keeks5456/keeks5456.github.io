@@ -25,6 +25,7 @@ function Resume() {
              exit="out"
              variants={pageTransitions}>
             <h2 className="heading">Resume</h2>
+            <div className="resume-container">
             <div className="res">
                 <br />
 
@@ -37,7 +38,7 @@ function Resume() {
                     <Page pageIndex={0} />
                 </Document>
             </div>
-
+            </div> {/*resume container ends here*/}
             <div className="connections">
                 <ul>
                     {/* replace the text with icons */}
@@ -48,6 +49,7 @@ function Resume() {
                 </ul>
             </div>
             </motion.div>
+            
         </div>
     );
 }
