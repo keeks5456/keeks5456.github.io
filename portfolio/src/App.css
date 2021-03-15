@@ -189,21 +189,38 @@ li a.active {
 
 /* quotes generator css here */
 
+.quotes-container{
+    display: flex;
+    justify-content: center;
+}
+
 #quotes-box{
     display: inline-block;
     background-color: whitesmoke;
     border-radius: 10px 0 10px 0;
-    margin: 30px 0 0 30px;
-    padding: 25px;
+    /* margin: 30px 0 0 30px;
+    padding: 25px; */
+    margin: 10rem auto;
+    width: 40rem;
+    /* box-sizing: border-box; */
+    padding: 3rem;
 }
 
 #author{
-    padding-top: 5px;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    /* padding-top: 5px; 
+    float: right; */
 }
 
 img, .do-better-gif{
     border-radius: 10px;
+}
+
+#text{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 
