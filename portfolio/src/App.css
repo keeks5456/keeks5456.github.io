@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Noto+Sans+SC:wght@500&display=swap');
+
 /* resume css */
 .res {
     display: inline-flex;
@@ -207,11 +211,11 @@ li a.active {
 }
 
 #author{
+    font-family: 'Noto Sans SC', sans-serif;
     display: flex;
     justify-content: flex-end;
-    font-size: 1.2rem;
-    /* padding-top: 5px; 
-    float: right; */
+    font-size: 1.5rem;
+
 }
 
 img, .do-better-gif{
@@ -219,9 +223,23 @@ img, .do-better-gif{
 }
 
 #text{
+    font-family: 'Noto Sans SC', sans-serif;
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
+
+#new-quote{
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    background-color: lightpink;
+    border: 1px solid lightblue;
+}
+
+#new-quote:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 
 
 /* @media query here */

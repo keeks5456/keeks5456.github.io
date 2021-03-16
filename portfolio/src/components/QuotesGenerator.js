@@ -13,6 +13,7 @@ function QuotesGenerator() {
 	const getQuotes = () => {
 		const inspo = `https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json`;
 		fetch(inspo).then((res) => res.json()).then((data) => {
+            console.log(data)
 			let dataQuotes = data.quotes;
 			//gives us our array of quotes
 			let randomNum = Math.floor(Math.random() * dataQuotes.length);
@@ -37,7 +38,7 @@ function QuotesGenerator() {
 			<div className="quotes-container">
 				<div id="quotes-box">
 					<div id="text">{quote}</div>
-					<div id="author">{author}</div>
+					<div id="author"> {author}</div>
 					<button onClick={handleClick} id="new-quote">
 						New quote
 					</button>
