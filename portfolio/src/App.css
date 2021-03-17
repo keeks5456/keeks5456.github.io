@@ -79,16 +79,6 @@ body{
 
     font-family: 'Judson', serif; 
 }
-/* 
-hr {
-    display: block; height: 1px;
-    border: 0; border-top: 5px solid orange;
-    margin: 1em 0; padding: 0;
-} 
-
-change this later
-
-*/
 
 /* home component */
 
@@ -96,6 +86,7 @@ change this later
     font-size: 25px;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .profile-pic{
@@ -117,7 +108,11 @@ border: 1px solid black;
 /* display: flex; */
 }
 
-/*  */
+h1, .about-me{
+    text-align: center;
+}
+
+
 .card-img-top {
     width: 100%;
     /* height: auto;
@@ -140,6 +135,7 @@ li a {
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .navbar {
@@ -163,6 +159,12 @@ li a.active {
 
 .navlist{
     font-size: 30px;
+}
+
+/* contact */
+
+.contact{
+    text-align: center;
 }
 
 /* blogs css */

@@ -20,7 +20,7 @@ function Contact() {
              variants={pageTransitions}>
            <div className="contact">
                <h1 className="question">Akiko! What is the best way someone can contact you if they have questions??</h1>
-               <h2 id="reach">Good question! The best way to reach me is through my email here </h2> 
+               <h2 id="reach">Ah yes! You can contact me through my links down below! </h2> 
                {/* insert arrow down icon */}
             </div>
             <div className="social-handles">

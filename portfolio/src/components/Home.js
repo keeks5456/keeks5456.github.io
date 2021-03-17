@@ -44,8 +44,11 @@ function Home({ profile }) {
                     </motion.h1>
                     <h2 className="about-me">About Me!</h2>
                     <p>Before I became a Junior Software Engineer, I was what you could call a quadruple threat! I was a dancer for a team called Str8Jacket,  a Barista for a variety of coffee shops, a student at San Francisco State University and, lastly an amazing dog walker for Wags! The best thing about this life was that I was creating connections with people almost everyday! Dancing brought out my passion for expressing myself. Making coffee, gave me the ability to turn people's bad days into good ones. Going to school has molded me into a hard working and well-organized person. Honestly, walking dogs is my form of therapy! Unfortunately, it all was not enough for me. Internally, I wanted so much more for myself but in a different way. </p>
-
-                   
+                    <br/>
+                    <p>How I got into coding was from going the self taught route! I started taking notes from free resources like FreeCodeCamp where I build my own "cookie recipie sheet", and using prework prep from other schools like Flatiron adn Rithm school, where I learned the fundamentals of HTML, CSS and Javascript. Eventuall, I decided that it was time to apply to a bootcamp to not only accelerate my learning but provide me the experience of working with others. </p>
+                    <br/>
+                    <p>Fast forward after graduation, I am now a certified Software engineer! As I continue my hunt for a full time Engineer job, I have made many connection, participated in a few hackathons, attended webinars, sent in many applications while fighting my way to solve Data Structures and Algorithms all to one day find the job that I can further grow as a software engineer!</p>
+                    <p></p>
                 </div> 
                 <div className="social-handles">
                 <ul>
